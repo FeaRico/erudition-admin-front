@@ -1,5 +1,5 @@
 export class Item{
-  id!: bigint;
+  id!: number;
   name!: string;
   imagePath?: string;
 }

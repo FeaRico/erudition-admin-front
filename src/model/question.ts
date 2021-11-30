@@ -1,6 +1,6 @@
 export class Question{
-  id!: bigint;
+  id!: number;
   text!: string;
-  item!: bigint;
+  item!: number;
   imagePath?: string;
 }

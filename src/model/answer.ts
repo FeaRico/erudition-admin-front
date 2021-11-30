@@ -1,6 +1,6 @@
 export class Answer{
-  id!: bigint;
+  id!: number;
   text!: string;
-  question!: bigint;
+  question!: number;
   isTrue!: boolean;
 }
