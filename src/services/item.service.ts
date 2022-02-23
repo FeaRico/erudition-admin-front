@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 import {environment} from "../environments/environment";
 import {HttpClient, HttpHeaders} from "@angular/common/http";
 import {Observable} from "rxjs";
@@ -8,30 +8,29 @@ import {Item} from "../model/item";
   providedIn: 'root'
 })
 export class ItemService {
-
   private readonly URL: string = environment.apiUrl + "/items/";
 
   constructor(private httpClient: HttpClient) {
   }
 
-  getAll(): Observable<any>{
+  getAll(): Observable<any> {
     return this.httpClient.get(this.URL);
   }
 
-  getById(id: number): Observable<any>{
+  getById(id: number): Observable<any> {
     return this.httpClient.get(this.URL + `${id}`);
   }
 
-  add(newItem: Item): Observable<any>{
+  create(createItem: Item): Observable<any> {
     const headers = new HttpHeaders().set('Content-Type', 'application/json');
-    return this.httpClient.post(this.URL, newItem, {headers: headers});
+    return this.httpClient.post(this.URL, createItem, {headers: headers});
   }
 
-  update(updatedItem: Item): Observable<any>{
-    return this.httpClient.put(this.URL, updatedItem);
+  update(updateItem: Item): Observable<any> {
+    return this.httpClient.put(this.URL, updateItem);
   }
 
-  delete(id: number): Observable<any>{
+  deleteById(id: number): Observable<any> {
     return this.httpClient.delete(this.URL + `${id}`);
   }
 }

@@ -1,6 +1,8 @@
+import {Question} from "./question";
+
 export class Answer{
   id!: number;
   text!: string;
-  question!: number;
+  question!: Question;
   isTrue!: boolean;
 }

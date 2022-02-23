@@ -1,6 +1,8 @@
+import {Item} from "./item";
+
 export class Question{
   id!: number;
   text!: string;
-  item!: number;
+  item!: Item;
   imagePath?: string;
 }
