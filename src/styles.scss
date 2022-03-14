@@ -3,3 +3,9 @@
 html{
   font-family: 'Roboto', sans-serif;
 }
+body{
+  //background: linear-gradient(90deg, rgba(245,109,5,1) 0%, rgba(167,252,13,1) 47%, rgba(0,212,255,1) 100%);
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

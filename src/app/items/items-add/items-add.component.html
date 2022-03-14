@@ -1,0 +1,19 @@
+<div class="container col-md-8 mx-auto w-25 min-200">
+  <h1>Добавление предмета</h1>
+  <div class="input-group mb-3">
+    <span class="input-group-text" id="input-name-label">Название</span>
+    <input class="form-control" id="item-name" #itemName
+    aria-label="Название предмета" aria-describedby="input-name-label">
+  </div>
+
+  <div class="input-group mb-3">
+    <span class="input-group-text" id="input-image-label">Картинка</span>
+    <input class="form-control" id="item-image-path" #itemImagePath
+    aria-label="Путь к картинке" aria-describedby="input-image-label">
+  </div>
+
+  <div class="d-grid gap-2">
+    <button class="btn btn-outline-primary" (click)="add(itemName.value, itemImagePath.value)">Добавить</button>
+    <button class="btn btn-outline-primary" (click)="backToPage()">Назад</button>
+  </div>
+</div>

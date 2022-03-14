@@ -1,0 +1,15 @@
+<div *ngIf="item">
+  <div class="container col-md-8 mx-auto w-25 min-200">
+    <h1>Предмет №{{item.id}}</h1>
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="input-name-label">Название</span>
+      <input class="form-control" id="item-name" [(ngModel)]="item.name"
+      aria-label="Имя предмета" aria-describedby="input-name-label">
+<!--      TODO: добавить редактирование картинки-->
+    </div>
+    <div class="d-grid gap-2">
+      <button class="btn btn-outline-primary" (click)="saveItem()">Сохранить</button>
+      <button class="btn btn-outline-primary" (click)="backToPage()">Назад</button>
+    </div>
+  </div>
+</div>

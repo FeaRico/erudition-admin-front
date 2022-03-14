@@ -1,0 +1,26 @@
+h1 {
+  text-align: center;
+  margin: 10px 0 20px 0;
+}
+
+div.center {
+  width: 50%;
+  margin: auto;
+}
+
+table{
+  width: 100%;
+  margin: auto;
+}
+
+.mat-column-id, .mat-column-size, .mat-column-detail, .mat-column-delete{
+  text-align: center;
+}
+
+fa-icon:hover{
+  cursor: pointer;
+}
+
+button{
+  margin: 1em 0 1em 0;
+}
